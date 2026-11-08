@@ -10,12 +10,21 @@ Open http://127.0.0.1:4173.
 
 ## Add your writing
 
-Edit `index.html`. Comments mark the places for your summaries of ParaLLM,
-Kalvi, and Sagora Connect, in that order. Add a `<p>` at each comment; paragraph spacing is already
-included in the stylesheet. The sidebar has a short introduction you can also
-edit. Project summaries remain yours to write. There is no contact section.
+Each project has its own static page:
 
-Your GitHub profile is linked beside your name. Project images open at full size.
+- `index.html`: project overview.
+- `kalvi.html`: Kalvi screenshots and your description.
+- `parallm.html`: ParaLLM screenshots and your description.
+- `sagora-connect.html`: Sagora Connect screenshots and your description.
+- `capstone.html`: your capstone topic, ready for your writing and images.
+
+Edit the relevant project page to update its summary. The sidebar links work on
+every page and mark the current project. The name and “All projects” links return
+to the overview. Sidebar markup is shared in appearance but stored in each HTML
+file; update all five copies when changing common details. There is no build step.
+Your existing project descriptions have been preserved. There is no contact section.
+
+Project images open at full size.
 The ParaLLM images show a completed comparison in the current iOS app: the
 question and synthesis, followed by an individual model reply. The synthesis
 capture was recovered from the supplied simulator screenshots on the Desktop;

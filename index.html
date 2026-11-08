@@ -22,31 +22,31 @@
   <script src="portfolio.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#projects">Skip to projects</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <div class="layout">
     <header class="sidebar">
       <div class="identity">
-        <h1><a href="#">Ashwin<br>Balakrishnan</a></h1>
+        <h1><a href="index.html">Ashwin<br>Balakrishnan</a></h1>
         <p class="role">Software Engineer and Student</p>
         <nav class="project-topics" aria-label="Projects and interests">
           <div class="project-topic">
             <h2>AI for Learners:</h2>
             <ul>
-              <li><a href="#kalvi">Kalvi</a></li>
-              <li><a href="#parallm">ParaLLM</a></li>
+              <li><a href="kalvi.html">Kalvi</a></li>
+              <li><a href="parallm.html">ParaLLM</a></li>
             </ul>
           </div>
           <div class="project-topic">
             <h2>Sustainability and AI:</h2>
             <ul>
-              <li><a href="#" data-placeholder-link aria-disabled="true">My Belmont Day School Capstone Topic</a></li>
+              <li><a href="capstone.html">My Belmont Day School Capstone Topic</a></li>
             </ul>
           </div>
           <div class="project-topic">
             <h2>Commercial Software:</h2>
             <ul>
-              <li><a href="#sagora-connect">Sagora Connect</a></li>
+              <li><a href="sagora-connect.html">Sagora Connect</a></li>
             </ul>
           </div>
         </nav>
@@ -62,35 +62,27 @@
       </fieldset>
     </header>
 
-    <main id="projects" tabindex="-1">
-      <div class="section-heading"><h2>Projects</h2><span>01 — 03</span></div>
+    <main id="main-content" tabindex="-1">
+      <div class="section-heading"><h2>Projects</h2><span>01 — 04</span></div>
 
-      <article class="project" id="kalvi">
-        <div class="project-heading"><h3>Kalvi</h3></div>
-        <a class="desktop-capture" href="assets/kalvi.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Kalvi screenshot at full size">
-          <img src="assets/kalvi.jpg" width="2117" height="1591" loading="lazy" alt="Kalvi showing a tutoring conversation about arches, recent chats, and suggested answers.">
+      <div class="project-grid">
+        <a class="project-tile" id="kalvi" href="kalvi.html">
+          <div class="tile-image"><img src="assets/kalvi.jpg" width="2117" height="1591" loading="lazy" alt="Kalvi tutoring interface."></div>
+          <div class="tile-heading"><h3>Kalvi</h3><span aria-hidden="true">↗</span></div>
         </a>
-        <p>AI is a powerful tool, but does not know when to limit itself. When students use AI, models often give the answer without guidance. To fix this, I made Kalvi. Kalvi is an AI-powered tutor that uses the Socratic pedagogy to gauge student thinking through questions. A socratic tutor like Kalvi is better than frontier models for education purposes because it is specifically trained to direct student thinking through questions. Kalvi is a fine-tuned version of Muse Glimmer by Meta.</p>
-      </article>
+        <a class="project-tile" id="parallm" href="parallm.html">
+          <div class="tile-image"><img src="assets/parallm-completed-synthesis.jpg" width="736" height="1600" loading="lazy" alt="A completed comparison in ParaLLM."></div>
+          <div class="tile-heading"><h3>ParaLLM</h3><span aria-hidden="true">↗</span></div>
+        </a>
+        <a class="project-tile" id="sagora-connect" href="sagora-connect.html">
+          <div class="tile-image"><img src="assets/sagora-connect-workspaces.jpg" width="730" height="1438" loading="lazy" alt="Sagora Connect workspaces."></div>
+          <div class="tile-heading"><h3>Sagora Connect</h3><span aria-hidden="true">↗</span></div>
+        </a>
+        <a class="project-tile text-tile" id="capstone" href="capstone.html">
+          <div class="tile-heading"><h3>My Belmont Day School Capstone Topic</h3><span aria-hidden="true">↗</span></div>
+        </a>
+      </div>
 
-      <article class="project" id="parallm">
-        <div class="project-heading"><h3>ParaLLM</h3><span>SwiftUI / iOS / macOS</span></div>
-        <div class="screen-gallery parallm-gallery">
-          <a href="assets/parallm-completed-synthesis.png" target="_blank" rel="noopener noreferrer" aria-label="Open the completed ParaLLM synthesis at full size"><img src="assets/parallm-completed-synthesis.jpg" width="736" height="1600" loading="lazy" alt="ParaLLM showing a renting-versus-buying question and the completed synthesis of model replies."></a>
-          <a href="assets/parallm-completed-answer.png" target="_blank" rel="noopener noreferrer" aria-label="Open the completed ParaLLM model reply at full size"><img src="assets/parallm-completed-answer.jpg" width="736" height="1600" loading="lazy" alt="ParaLLM showing Gemma’s completed reply in the same comparison, with no error or loading state."></a>
-        </div>
-        <p class="image-note">Completed comparison · iOS simulator.</p>
-        <p>ParaLLM is an AI productivity tool that helps you compare different LLM models.</p>
-      </article>
-
-      <article class="project" id="sagora-connect">
-        <div class="project-heading"><h3>Sagora Connect</h3></div>
-        <div class="screen-gallery sagora-gallery">
-          <a href="assets/sagora-connect-workspaces.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Sagora Connect workspaces screenshot at full size"><img src="assets/sagora-connect-workspaces.jpg" width="730" height="1438" loading="lazy" alt="Sagora Connect showing workspace search and two active workspaces."></a>
-          <a href="assets/sagora-connect-chat.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Sagora Connect chat screenshot at full size"><img src="assets/sagora-connect-chat.jpg" width="732" height="1500" loading="lazy" alt="Sagora Connect showing a workspace conversation, checkpoint approval, and chat controls."></a>
-        </div>
-        <p>Sagora is a continuous optimization platform for enterprise AI systems that uses autonomous AI agents to improve their performance, cost, and quality. Sagora Connect is an iOS app that allows users to remotely control and monitor these agents from their phones. I wrote this app for the company between July and August 2026; in Swift without any AI coding agents.</p>
-      </article>
 
       <footer class="page-footer"><span>Ashwin Balakrishnan</span><a href="#">Back to top ↑</a></footer>
     </main>

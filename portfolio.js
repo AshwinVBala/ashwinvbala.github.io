@@ -1,8 +1,4 @@
 (() => {
-  document.querySelectorAll('[data-placeholder-link]').forEach((link) => {
-    link.addEventListener('click', (event) => event.preventDefault());
-  });
-
   const root = document.documentElement;
   const picker = document.querySelector('.theme-picker');
   const choices = [...document.querySelectorAll('input[name="theme"]')];
