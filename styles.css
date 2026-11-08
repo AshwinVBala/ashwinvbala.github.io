@@ -69,9 +69,13 @@ h1 a:hover { color: var(--text); }
 .role { margin-top: 14px; color: var(--secondary); font-size: 15px; }
 .github-link { display: inline-flex; align-items: center; gap: 9px; margin-top: 24px; min-height: 32px; font-size: 14px; }
 .github-link .outbound { color: var(--secondary); font-size: 16px; margin-left: 7px; }
-.project-index { display: grid; gap: 3px; margin-top: 49px; }
-.project-index a { width: fit-content; padding-block: 7px; color: var(--secondary); font-size: 14px; }
-.project-index a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
+.project-topics { margin-top: 24px; font-size: 15px; }
+.project-topic + .project-topic { margin-top: 20px; }
+.project-topics h2 { font: inherit; }
+.project-topics ul { margin: 6px 0 0; padding-left: 20px; }
+.project-topics li { line-height: 1.7; }
+.project-topics a { display: inline-flex; align-items: center; width: 100%; min-height: 48px; padding-block: 10px; color: var(--secondary); font-size: 18px; line-height: 1.4; }
+.project-topics a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
 
 .theme-picker { padding: 0; margin: 48px 0 0; border: 0; min-width: 0; }
 .theme-picker legend { padding: 0; margin-bottom: 10px; color: var(--secondary); font-size: 12px; }
@@ -122,7 +126,6 @@ main:focus { outline: none; }
   h1 { font-size: 27px; }
   .role { margin-top: 11px; font-size: 14px; }
   .github-link { margin-top: 14px; }
-  .project-index { display: none; }
   .theme-picker { margin: 0 0 5px; }
   .section-heading { margin-bottom: 27px; }
   .project { margin-bottom: 38px; }
