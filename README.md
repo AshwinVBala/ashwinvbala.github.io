@@ -55,4 +55,8 @@ still works for the current visit. Device appearance also works without JavaScri
 - `portfolio.js`: appearance, synchronization between tabs, and the mobile menu.
 - `assets/`: screenshots, all hosted locally.
 
+The CSS and JavaScript URLs in all five HTML files include a `?v=` content hash.
+When changing either asset, update its version in every page so browsers fetch
+the new file instead of reusing the previous deployment's cached copy.
+
 The static files are ready for GitHub Pages.
