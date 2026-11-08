@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f6">
-  <meta name="description" content="Ashwin Balakrishnan — Software Engineer">
+  <meta name="theme-color" content="#F6F5F2">
+  <meta name="description" content="Ashwin Balakrishnan — Software Engineer and Student">
   <meta property="og:title" content="Ashwin Balakrishnan">
-  <meta property="og:description" content="ParaLLM · Kalvi · Sagora Connect">
+  <meta property="og:description" content="Ashwin Balakrishnan — Software Engineer and Student">
   <meta property="og:type" content="website">
   <title>Ashwin Balakrishnan</title>
   <script>
@@ -21,72 +21,100 @@
   <link rel="stylesheet" href="styles.css">
   <script src="portfolio.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <div class="layout">
-    <header class="sidebar">
-      <div class="identity">
-        <h1><a href="index.html">Ashwin<br>Balakrishnan</a></h1>
-        <p class="role">Software Engineer and Student</p>
-        <nav class="project-topics" aria-label="Projects and interests">
-          <div class="project-topic">
-            <h2>AI for Learners</h2>
-            <ul>
-              <li><a href="kalvi.html">Kalvi</a></li>
-              <li><a href="parallm.html">ParaLLM</a></li>
-            </ul>
-          </div>
-          <div class="project-topic">
-            <h2>Sustainability and AI</h2>
-            <ul>
-              <li><a href="capstone.html">Capstone Project</a></li>
-            </ul>
-          </div>
-          <div class="project-topic">
-            <h2>Commercial Software</h2>
-            <ul>
-              <li><a href="sagora-connect.html">Sagora Connect</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
+  <header class="topbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Ashwin Balakrishnan</a>
+      <button class="navtoggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-navigation" hidden>☰</button>
+      <nav class="sections" id="site-navigation" aria-label="Sections">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#topics">Topics</a>
+      </nav>
       <fieldset class="theme-picker" hidden>
-        <legend>Appearance</legend>
+        <legend class="sr-only">Appearance</legend>
         <div class="theme-options">
           <label><input type="radio" name="theme" value="light"><span>Light</span></label>
           <label><input type="radio" name="theme" value="dark"><span>Dark</span></label>
           <label><input type="radio" name="theme" value="device" checked><span>Device<span class="sr-only"> default</span></span></label>
         </div>
       </fieldset>
-    </header>
-
-    <main id="main-content" tabindex="-1">
-      <div class="section-heading"><h2>Projects</h2><span>01 — 04</span></div>
-
-      <div class="project-grid">
-        <a class="project-tile" id="kalvi" href="kalvi.html">
-          <div class="tile-image"><img src="assets/kalvi.jpg" width="2117" height="1591" loading="lazy" alt="Kalvi tutoring interface."></div>
-          <div class="tile-heading"><h3>Kalvi</h3><span aria-hidden="true">↗</span></div>
-        </a>
-        <a class="project-tile" id="parallm" href="parallm.html">
-          <div class="tile-image"><img src="assets/parallm-completed-synthesis.jpg" width="736" height="1600" loading="lazy" alt="A completed comparison in ParaLLM."></div>
-          <div class="tile-heading"><h3>ParaLLM</h3><span aria-hidden="true">↗</span></div>
-        </a>
-        <a class="project-tile" id="sagora-connect" href="sagora-connect.html">
-          <div class="tile-image"><img src="assets/sagora-connect-workspaces.jpg" width="730" height="1438" loading="lazy" alt="Sagora Connect workspaces."></div>
-          <div class="tile-heading"><h3>Sagora Connect</h3><span aria-hidden="true">↗</span></div>
-        </a>
-        <a class="project-tile" id="capstone" href="capstone.html">
-          <div class="tile-image tile-image-photo"><img src="assets/capstone-data-center.jpg" width="1198" height="439" loading="lazy" alt="An aisle between rows of server racks in a data center."></div>
-          <div class="tile-heading"><h3>Capstone Project</h3><span aria-hidden="true">↗</span></div>
-        </a>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section class="hero" aria-labelledby="intro-heading">
+      <p class="eyebrow">Software Engineer and Student</p>
+      <h1 id="intro-heading">Ashwin Balakrishnan</h1>
+      <div class="hero-actions">
+        <a class="cta" href="#projects">View projects <span aria-hidden="true">→</span></a>
+        <a class="cta ghost" href="#topics">Browse topics <span aria-hidden="true">→</span></a>
       </div>
+    </section>
 
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="sec-head"><h2 id="projects-heading">Projects</h2><span class="rule" aria-hidden="true"></span><span class="section-note">4 projects</span></div>
+      <div class="project-grid">
+        <article class="card" id="kalvi">
+          <a class="media desktop" href="kalvi.html" aria-label="View Kalvi"><img src="assets/kalvi.jpg" width="2117" height="1591" loading="lazy" alt="Kalvi tutoring interface."></a>
+          <div class="card-body">
+            <p class="meta">AI for Learners</p>
+            <h3><a href="kalvi.html">Kalvi</a></h3>
+            <p class="summary">Kalvi is an AI-powered tutor that uses the Socratic pedagogy to gauge student thinking through questions.</p>
+            <div class="card-links"><a class="out" href="kalvi.html">View project <span aria-hidden="true">→</span></a></div>
+          </div>
+        </article>
+        <article class="card" id="parallm">
+          <a class="media phone" href="parallm.html" aria-label="View ParaLLM"><img src="assets/parallm-completed-synthesis.jpg" width="736" height="1600" loading="lazy" alt="A completed comparison in ParaLLM."></a>
+          <div class="card-body">
+            <p class="meta">AI for Learners</p>
+            <h3><a href="parallm.html">ParaLLM</a></h3>
+            <p class="summary">ParaLLM is an AI productivity tool that helps you compare different LLM models.</p>
+            <div class="card-links"><a class="out" href="parallm.html">View project <span aria-hidden="true">→</span></a></div>
+          </div>
+        </article>
+        <article class="card" id="sagora-connect">
+          <a class="media phone" href="sagora-connect.html" aria-label="View Sagora Connect"><img src="assets/sagora-connect-workspaces.jpg" width="730" height="1438" loading="lazy" alt="Sagora Connect workspaces."></a>
+          <div class="card-body">
+            <p class="meta">Commercial Software</p>
+            <h3><a href="sagora-connect.html">Sagora Connect</a></h3>
+            <p class="summary">Sagora is a continuous optimization platform for enterprise AI systems that uses autonomous AI agents to improve their performance, cost, and quality. Sagora Connect is an iOS app that allows users to remotely control and monitor these agents from their phones.</p>
+            <div class="card-links"><a class="out" href="sagora-connect.html">View project <span aria-hidden="true">→</span></a></div>
+          </div>
+        </article>
+        <article class="card" id="capstone">
+          <a class="media photo" href="capstone.html" aria-label="View Capstone Project"><img src="assets/capstone-data-center.jpg" width="1198" height="439" loading="lazy" alt="An aisle between rows of server racks in a data center."></a>
+          <div class="card-body">
+            <p class="meta">Sustainability and AI</p>
+            <h3><a href="capstone.html">Capstone Project</a></h3>
 
-      <footer class="page-footer"><span>Ashwin Balakrishnan</span><a href="#">Back to top ↑</a></footer>
-    </main>
-  </div>
+            <div class="card-links"><a class="out" href="capstone.html">View project <span aria-hidden="true">→</span></a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="topics" aria-labelledby="topics-heading">
+      <div class="sec-head"><h2 id="topics-heading">Projects by topic</h2><span class="rule" aria-hidden="true"></span></div>
+      <div class="topics">
+        <section class="topic">
+          <h3>AI for Learners</h3>
+          <ul><li><a href="kalvi.html">Kalvi</a></li><li><a href="parallm.html">ParaLLM</a></li></ul>
+        </section>
+        <section class="topic">
+          <h3>Sustainability and AI</h3>
+          <ul><li><a href="capstone.html">Capstone Project</a></li></ul>
+        </section>
+        <section class="topic">
+          <h3>Commercial Software</h3>
+          <ul><li><a href="sagora-connect.html">Sagora Connect</a></li></ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="inner"><span>Ashwin Balakrishnan</span><a href="#top">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>

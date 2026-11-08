@@ -27,4 +27,29 @@
   window.addEventListener('storage', (event) => {
     if (event.key === 'portfolio-theme' || event.key === null) applyTheme(event.newValue);
   });
+
+  const topbar = document.querySelector('.topbar');
+  const menuButton = document.querySelector('.navtoggle');
+  const navigation = document.querySelector('#site-navigation');
+
+  function closeMenu() {
+    navigation.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  }
+
+  menuButton.hidden = false;
+  topbar.classList.add('nav-ready');
+  menuButton.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+  navigation.addEventListener('click', (event) => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  topbar.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
 })();

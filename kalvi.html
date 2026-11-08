@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f6">
+  <meta name="theme-color" content="#F6F5F2">
   <meta name="description" content="Kalvi — Ashwin Balakrishnan">
   <meta property="og:title" content="Kalvi — Ashwin Balakrishnan">
   <meta property="og:description" content="Kalvi — Ashwin Balakrishnan">
@@ -21,61 +21,58 @@
   <link rel="stylesheet" href="styles.css">
   <script src="portfolio.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <div class="layout">
-    <header class="sidebar">
-      <div class="identity">
-        <h1><a href="index.html">Ashwin<br>Balakrishnan</a></h1>
-        <p class="role">Software Engineer and Student</p>
-        <nav class="project-topics" aria-label="Projects and interests">
-          <div class="project-topic">
-            <h2>AI for Learners:</h2>
-            <ul>
-              <li><a href="kalvi.html" aria-current="page">Kalvi</a></li>
-              <li><a href="parallm.html">ParaLLM</a></li>
-            </ul>
-          </div>
-          <div class="project-topic">
-            <h2>Sustainability and AI:</h2>
-            <ul>
-              <li><a href="capstone.html">My Belmont Day School Capstone Topic</a></li>
-            </ul>
-          </div>
-          <div class="project-topic">
-            <h2>Commercial Software:</h2>
-            <ul>
-              <li><a href="sagora-connect.html">Sagora Connect</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
+  <header class="topbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Ashwin Balakrishnan</a>
+      <button class="navtoggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-navigation" hidden>☰</button>
+      <nav class="sections" id="site-navigation" aria-label="Sections">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#topics">Topics</a>
+      </nav>
       <fieldset class="theme-picker" hidden>
-        <legend>Appearance</legend>
+        <legend class="sr-only">Appearance</legend>
         <div class="theme-options">
           <label><input type="radio" name="theme" value="light"><span>Light</span></label>
           <label><input type="radio" name="theme" value="dark"><span>Dark</span></label>
           <label><input type="radio" name="theme" value="device" checked><span>Device<span class="sr-only"> default</span></span></label>
         </div>
       </fieldset>
-    </header>
+    </div>
+  </header>
+  <main class="detail-main" id="main-content" tabindex="-1">
+    <a class="back-link" href="index.html#projects">← All projects</a>
+    <article class="project project-detail" id="kalvi">
+      <header class="project-heading">
+        <p class="eyebrow">AI for Learners</p>
+        <h1>Kalvi</h1>
 
-    <main id="main-content" tabindex="-1">
-      <a class="back-link" href="index.html">← All projects</a>
-
-      <article class="project project-detail" id="kalvi">
-        <div class="project-heading"><h2>Kalvi</h2></div>
+      </header>
+      <div class="prose project-description">
+        <p>AI is a powerful tool, but does not know when to limit itself. When students use AI, models often give the answer without guidance. To fix this, I made Kalvi. Kalvi is an AI-powered tutor that uses the Socratic pedagogy to gauge student thinking through questions. A socratic tutor like Kalvi is better than frontier models for education purposes because it is specifically trained to direct student thinking through questions. Kalvi is a fine-tuned version of Muse Glimmer by Meta.</p>
+      </div>
+      <div class="project-images">
         <a class="desktop-capture" href="assets/kalvi.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Kalvi screenshot at full size">
           <img src="assets/kalvi.jpg" width="2117" height="1591" loading="lazy" alt="Kalvi showing a tutoring conversation about arches, recent chats, and suggested answers.">
         </a>
-        <p>AI is a powerful tool, but does not know when to limit itself. When students use AI, models often give the answer without guidance. To fix this, I made Kalvi. Kalvi is an AI-powered tutor that uses the Socratic pedagogy to gauge student thinking through questions. A socratic tutor like Kalvi is better than frontier models for education purposes because it is specifically trained to direct student thinking through questions. Kalvi is a fine-tuned version of Muse Glimmer by Meta.</p>
-      </article>
+      </div>
+    </article>
 
+    <nav class="project-nav" aria-label="Projects">
+      <div class="sec-head"><h2>Explore projects</h2><span class="rule" aria-hidden="true"></span></div>
+      <div class="project-nav-links">
+        <a href="kalvi.html" aria-current="page">Kalvi</a>
+        <a href="parallm.html">ParaLLM</a>
+        <a href="sagora-connect.html">Sagora Connect</a>
+        <a href="capstone.html">Capstone Project</a>
+      </div>
+    </nav>
+  </main>
 
-      <footer class="page-footer"><span>Ashwin Balakrishnan</span><a href="#">Back to top ↑</a></footer>
-    </main>
-  </div>
+  <footer class="page-footer">
+    <div class="inner"><span>Ashwin Balakrishnan</span><a href="#top">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>

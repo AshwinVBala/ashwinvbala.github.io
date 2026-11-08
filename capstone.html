@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f6">
+  <meta name="theme-color" content="#F6F5F2">
   <meta name="description" content="Capstone Project — Ashwin Balakrishnan">
   <meta property="og:title" content="Capstone Project — Ashwin Balakrishnan">
   <meta property="og:description" content="Capstone Project — Ashwin Balakrishnan">
@@ -21,58 +21,54 @@
   <link rel="stylesheet" href="styles.css">
   <script src="portfolio.js" defer></script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <div class="layout">
-    <header class="sidebar">
-      <div class="identity">
-        <h1><a href="index.html">Ashwin<br>Balakrishnan</a></h1>
-        <p class="role">Software Engineer and Student</p>
-        <nav class="project-topics" aria-label="Projects and interests">
-          <div class="project-topic">
-            <h2>AI for Learners:</h2>
-            <ul>
-              <li><a href="kalvi.html">Kalvi</a></li>
-              <li><a href="parallm.html">ParaLLM</a></li>
-            </ul>
-          </div>
-          <div class="project-topic">
-            <h2>Sustainability and AI:</h2>
-            <ul>
-              <li><a href="capstone.html" aria-current="page">Capstone Project</a></li>
-            </ul>
-          </div>
-          <div class="project-topic">
-            <h2>Commercial Software:</h2>
-            <ul>
-              <li><a href="sagora-connect.html">Sagora Connect</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
+  <header class="topbar">
+    <div class="inner">
+      <a class="brand" href="index.html">Ashwin Balakrishnan</a>
+      <button class="navtoggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-navigation" hidden>☰</button>
+      <nav class="sections" id="site-navigation" aria-label="Sections">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#topics">Topics</a>
+      </nav>
       <fieldset class="theme-picker" hidden>
-        <legend>Appearance</legend>
+        <legend class="sr-only">Appearance</legend>
         <div class="theme-options">
           <label><input type="radio" name="theme" value="light"><span>Light</span></label>
           <label><input type="radio" name="theme" value="dark"><span>Dark</span></label>
           <label><input type="radio" name="theme" value="device" checked><span>Device<span class="sr-only"> default</span></span></label>
         </div>
       </fieldset>
-    </header>
+    </div>
+  </header>
+  <main class="detail-main" id="main-content" tabindex="-1">
+    <a class="back-link" href="index.html#projects">← All projects</a>
+    <article class="project project-detail" id="capstone">
+      <header class="project-heading">
+        <p class="eyebrow">Sustainability and AI</p>
+        <h1>Capstone Project</h1>
 
-    <main id="main-content" tabindex="-1">
-      <a class="back-link" href="index.html">← All projects</a>
+      </header>
+      <div class="project-images">
+        <a class="desktop-capture" href="assets/capstone-data-center.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the data center photo at full size"><img src="assets/capstone-data-center.jpg" width="1198" height="439" alt="An aisle between rows of server racks in a data center."></a>
+        <!-- Add your capstone summary here. -->
+      </div>
+    </article>
 
-      <article class="project project-detail" id="capstone">
-        <div class="project-heading"><h2>Capstone Project</h2></div>
-        <p></p>
-      </article>
+    <nav class="project-nav" aria-label="Projects">
+      <div class="sec-head"><h2>Explore projects</h2><span class="rule" aria-hidden="true"></span></div>
+      <div class="project-nav-links">
+        <a href="kalvi.html">Kalvi</a>
+        <a href="parallm.html">ParaLLM</a>
+        <a href="sagora-connect.html">Sagora Connect</a>
+        <a href="capstone.html" aria-current="page">Capstone Project</a>
+      </div>
+    </nav>
+  </main>
 
-
-      <footer class="page-footer"><span>Ashwin Balakrishnan</span><a href="#">Back to top ↑</a></footer>
-    </main>
-  </div>
+  <footer class="page-footer">
+    <div class="inner"><span>Ashwin Balakrishnan</span><a href="#top">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>
